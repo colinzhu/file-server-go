@@ -27,7 +27,7 @@ func startServer() {
 	// Get the IP addresses of the current machine
 	addrs, err := net.InterfaceAddrs()
 	if err != nil {
-		log.Fatal(err)
+		log.Printf("Failed to get IP addresses: %v", err)
 	}
 
 	// Print the IP addresses
